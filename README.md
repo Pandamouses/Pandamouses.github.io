@@ -32,7 +32,7 @@ if the sheep is hunted, then the sheep is dead, and stop moving with color red:
               a=(a-random.randint(1,d))%100
           return a 
 ```
- the value of d is `d = 3 `, while in wolf:
+   the value of d is `d = 3 `, while in wolf:
   ```python
         def move_coordinate(self,a,v):
        
@@ -44,7 +44,7 @@ if the sheep is hunted, then the sheep is dead, and stop moving with color red:
               a=(a-random.randint(4,v))%100
           return a
 ```
-  the value v is `v = 50`, so wolves has a high possibility to move faster than sheep. [agentwolf.py](agentwolf.py)
+   the value v is `v = 50`, so wolves has a high possibility to move faster than sheep. [agentwolf.py](agentwolf.py)
 
 - in1.txt contains raster data, each value represtents a pixel, so all the data can form a environment background. [in1.txt](in1.txt)
 
