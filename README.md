@@ -22,16 +22,16 @@ This model is created to monitor wolves hunt sheep event. It simulates wolves ch
               a=(a-random.randint(1,d))%100
           return a `
 
-the value of d is `d = 3 `, while in wolf:``` def move_coordinate(self,a,v):```
+   the value of d is `d = 3 `, while in wolf:``` def move_coordinate(self,a,v):```
        
-          `if random.random()<0.33:
-              return a
-          elif random.random()<0.5:
-              a=(a+random.randint(4,v))%100
-          else:
-              a=(a-random.randint(4,v))%100
-          return a`
+        `if random.random()<0.33:
+             return a
+         elif random.random()<0.5:
+             a=(a+random.randint(4,v))%100
+         else:
+             a=(a-random.randint(4,v))%100
+         return a`
 
-the value if v is `v = 6`, so wolves has a high possibility to move faster than sheep.
+   the value if v is `v = 6`, so wolves has a high possibility to move faster than sheep.
 
 - in1.txt contains raster data, each value represtents a pixel, so all the data can form a environment background.
