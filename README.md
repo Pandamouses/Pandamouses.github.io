@@ -61,7 +61,7 @@ The model has a bug which is in the hunting part. All the sheep will be hunted a
 ```
 sheep will only move if the color is not red. However, the problem still exists.
 
-## License
+## 4. License
 [MIT © Yuming Zhang](LICENSE)
 
 
