@@ -12,7 +12,8 @@ This model is created to monitor wolves hunt sheep event. It simulates wolves ch
 
 - agentwolf.py contains code of class `Wolf` which represents wolves. It only includes move function, but the wolves can move faster than sheep. Because in sheep:
     
-   ` def move_coordinate(self,a,d):`
+ ```python 
+   def move_coordinate(self,a,d):
      
           if random.random()<0.33:
               return a
@@ -20,19 +21,21 @@ This model is created to monitor wolves hunt sheep event. It simulates wolves ch
               a=(a+random.randint(1,d))%100
           else:
               a=(a-random.randint(1,d))%100
-          return a `
-
-   the value of d is `d = 3 `, while in wolf:``` def move_coordinate(self,a,v):```
+          return a 
+```
+ the value of d is `d = 3 `, while in wolf:
+  ```python
+     def move_coordinate(self,a,v):
        
-        if random.random()<0.33:
-             return a
-         elif random.random()<0.5:
-             a=(a+random.randint(4,v))%100
-         else:
-             a=(a-random.randint(4,v))%100
-         return a
-
-   the value if v is `v = 6`, so wolves has a high possibility to move faster than sheep.
+          if random.random()<0.33:
+              return a
+          elif random.random()<0.5:
+              a=(a+random.randint(4,v))%100
+          else:
+              a=(a-random.randint(4,v))%100
+          return a
+```
+  the value v is `v = 6`, so wolves has a high possibility to move faster than sheep.
 
 - in1.txt contains raster data, each value represtents a pixel, so all the data can form a environment background.
 
