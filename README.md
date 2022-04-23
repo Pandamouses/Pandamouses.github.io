@@ -35,3 +35,6 @@ This model is created to monitor wolves hunt sheep event. It simulates wolves ch
    the value if v is `v = 6`, so wolves has a high possibility to move faster than sheep.
 
 - in1.txt contains raster data, each value represtents a pixel, so all the data can form a environment background.
+
+## How to run
+This model runs in python, after clicking `run file`, it will pop up a menu. And click `Model` in the menu bar, click `Run model` the model will start to run. Sheep will move randomly and wolves will move faster. There will be 3 wolves with random color **black, green** and **blue**, and all the sheep(40) are **white**. Wolves and sheep will only move 10 times. If sheep is within 20 unit range of wolf, the sheep would be caught and die.
