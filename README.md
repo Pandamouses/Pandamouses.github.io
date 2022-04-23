@@ -22,7 +22,7 @@ if the sheep is hunted, then the sheep is dead, and stop moving with color red:
 - agentwolf.py contains code of class `Wolf` which represents wolves. It only includes move function, but the wolves can move faster than sheep. Because in sheep:
     
  ```python 
-   def move_coordinate(self,a,d):
+       def move_coordinate(self,a,d):
      
           if random.random()<0.33:
               return a
@@ -34,7 +34,7 @@ if the sheep is hunted, then the sheep is dead, and stop moving with color red:
 ```
  the value of d is `d = 3 `, while in wolf:
   ```python
-     def move_coordinate(self,a,v):
+        def move_coordinate(self,a,v):
        
           if random.random()<0.33:
               return a
@@ -54,10 +54,10 @@ This model runs in python, after clicking `run file`, it will pop up a menu. And
 ## Issues
 The model has a bug which is in the hunting part. All the sheep will be hunted and die according to the code, but no matter setting how many iterations, only three sheep will die. Though the record in console shows multiple kills, the animation only shows three dead sheep. In order to tackle the problem, another code to determine the sheep is dead was added:
 ```python
-     def move_coordinate(self,a,d):
-        if self.color != 'Red':
-          if random.random()<0.33:
-              return a
+        def move_coordinate(self,a,d):
+          if self.color != 'Red':
+            if random.random()<0.33:
+               return a
 ```
 sheep will only move if the color is not red. However, the problem still exists.
 
