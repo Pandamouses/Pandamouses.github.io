@@ -35,13 +35,13 @@ This model is created to monitor wolves hunt sheep event. It simulates wolves ch
               a=(a-random.randint(4,v))%100
           return a
 ```
-  the value v is `v = 6`, so wolves has a high possibility to move faster than sheep.
+  the value v is `v = 50`, so wolves has a high possibility to move faster than sheep.
 
 - in1.txt contains raster data, each value represtents a pixel, so all the data can form a environment background.
 
 ## How to run
-This model runs in python, after clicking `run file`, it will pop up a menu. And click `Model` in the menu bar, click `Run model` the model will start to run. Sheep will move randomly and wolves will move faster. There will be 3 wolves with random color **black, green** and **blue**, and all the sheep(40) are **white**. Wolves and sheep are set to move only 10 times. If sheep is within 20 unit range of wolf, the sheep would be caught and die. This is a [screen shot](hunting.png) of the model showing 3 dead sheep. If the model keeps running, then all the sheep is suppose to die.
+This model runs in python, after clicking `run file`, it will pop up a menu. And click `Model` in the menu bar, click `Run model` the model will start to run. Sheep will move randomly and wolves will move faster. There will be 3 wolves with random color **black, green** and **blue**, and all the sheep(40) are **white**. Wolves and sheep are set to move only 10 times. If sheep is within 30 unit range of wolf, the sheep would be caught and die. This is a **[screen shot](hunting.png)** of the model showing 3 dead sheep. If the model keeps running, then all the sheep is suppose to die.
 
 ## Issues
-The model has a bug which is in the 
+The model has a bug which is in the hunting part. All the sheep will be hunted and die according to the code, but no matter setting how many iterations, only three sheep will die. Though the record in console shows multiple kills, the animation only shows three dead sheep.
 
