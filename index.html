@@ -2,22 +2,35 @@
 
 <head>
 
-<title>
+  <title>
      GEOG5990M Programming for Geographical Information Analysis: Core Skills (28787) portofolio
-</title>
+  </title>
 
 </head>
 
 
 
-<body>
+  <body>
+     <textarea id="text-input" oninput="this.editor.update()"
+              rows="6" cols="60">Insert proxied **Markdown** here.</textarea>
+     
+    <script src="README/markdown.js">
+   
+      function Editor(input, preview) {
+        this.update = function () {
+          preview.innerHTML = markdown.toHTML(input.value);
+        };
+        input.editor = this;
+        this.update();
+      }
+      var $ = function (id) { return document.getElementById(id); };
+      new Editor($("text-input"), $("preview"));
 
 
 
 
 
-
-</body>
+  </body>
 
 
 
