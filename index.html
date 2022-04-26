@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title>
+          GEOG5990M Programming for Geographical Information Analysis: Core Skills (28787) portofolio
+     </title>
+
+     <style>
+     body { 
+          height: 100%;
+          width: 100%;
+          background-color: rgb(6, 67, 75);
+          color: black;
+          font-size: small;
+          font-family: Arial,Helvetica,sans-serif;
+          text-align: left;
+          
+          /*link a image as background and cover the whole page*/
+          /*background-image:url("SKAVEN.jpg");*/
+          background-repeat: no-repeat;
+          background-size: cover;
+     }
+     .mop{
+          background-color: ivory;
+          color: rgb(0, 0, 0);
+          opacity: 0.7;
+          position: relative;
+          width: 65%;
+          font-size: 18px;
+          font-family: cursive;
+          text-align: justify;
+          border: 1px solid black;
+          padding: 10px;
+          word-break:break-all;
+     }
+
+     h1{
+          text-align: center;
+          color: rgb(255, 255, 255);
+          text-shadow: 2px 2px rgb(14, 147, 105);
+          border: 2px solid rgb(0, 0, 0);
+          outline: #9cf112 solid 10px;
+          border-radius: 25px;
+          font-size: 30px;
+
+     }
+     .introduction{
+     display: block;
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-image:url("SKAVEN.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;  
+     }
+     img{
+     position: relative;
+     float: right;
+     width: 55%;
+     margin-top: 15%;
+     }
+     </style>
+
+
+</head>
+
+
+
+<body>
+
+    <h1><b>Agent Based Model</b></h1>
+    
+    <div class="introduction">
+     <div class="mop">
+         
+          <h3><b><i>Content list</i></b></h3>
+          <p>This model is created to monitor wolves hunt sheep events. It simulates wolves chasing the sheep, catching it, and eating it. This model contains four files: <a href="GIS.py">GIS.py</a>, <a href="agentframework.py">agentframework.py</a>, <a href="agentwolf.py">agentwolf.py</a>, and <a href="in1.txt">in1.txt</a>.
+           <br><h3><b><i>How to run</i></b></h3>
+           This model runs in python, after clicking <b>run file</b>, it will pop up a menu. And click <b>Model</b> in the menu bar, click <b>Run model</b> the model will start to run. Sheep will move randomly and wolves will move faster. There will be 3 wolves with random colors black, green and blue, and all the sheep(40) are white. Wolves and sheep are set to move only 10 times. If sheep are within the 30 unit range of wolves, the sheep would be caught and die. This is a <a href="hunting.png">screen shot</a> of the model showing 3 dead sheep. If the model keeps running, then all the sheep are supposed to die.
+           <br><h3><b><i>Tests</i></b></h3>
+           To ensure the model has no significant error or flaw, several tests were conducted: url drag tests, envronment background tests, catch function tests, and update function tests.
+            <br><h3><b><i>Issues</i></b></h3>The model has a bug which is in the hunting part. All the sheep will be hunted and die according to the code, but no matter setting how many iterations, only three sheep will die. Though the record in the console shows multiple kills, the animation only shows three dead sheep. 
+            <br><h3><b><i>License</i></b></h3>
+            <a href="LICENSE">MIT © Yuming Zhang</a>
+            <br>
+            Name: Zhang Yuming<br>
+            Email: gy21yz@leeds.ac.uk
+          </p></div>
+
+     </div>
+     <div><img src="Skaven2.png" alt="pandamouse"></div>
+</body>
+
+
+
+</html>
